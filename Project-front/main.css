@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.header{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.842);
+}
+.header-main{
+    width: 1170px;
+    height: 55px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu{
+    width: 750px;
+    height: 55px;
+    position: relative;
+}
+.header-menu ul li{
+    list-style: none;
+    height: 55px;
+    line-height: 55px;
+    float: left;
+    margin: 0 10px;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-weight: 500;
+}
+.header-menu ul li a:hover{
+    color: #8cd7ff;
+}
+.header-menu li .pb{
+    color: #0689ba;
+}
+.header-menu--logo{
+   margin-top: 10px;
+}
+.header-action{
+    height: 55px;
+    line-height: 55px;
+    display: flex;
+}
+.header-action .headphone{
+    margin-right: 40px;
+}
+.bacham{
+margin-top: -3px;
+}
+.header-search{
+    height: 55px;
+    line-height: 55px;
+}
+.search-box{
+    width: 270px;
+    height: 30px;
+    background-color: #f5f5f5;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+}
