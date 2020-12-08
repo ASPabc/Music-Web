@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GUI\Admin.aspx" />
+    <Content Include="GUI\Register.aspx" />
     <Content Include="GUI\User.aspx" />
     <Content Include="Image\Login\login_background.jpg" />
     <Content Include="GUI\Login.aspx" />
@@ -90,6 +91,13 @@
     </Compile>
     <Compile Include="GUI\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
