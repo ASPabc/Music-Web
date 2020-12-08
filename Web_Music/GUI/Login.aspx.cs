@@ -29,6 +29,7 @@ namespace Web_Music
             else if(bus_TaiKhoan.GetRole(username, password) == "user")
             {
                 Response.Redirect("User.aspx");
+                
             }
             else if(bus_TaiKhoan.GetRole(username, password) == "none")
             {
