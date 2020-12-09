@@ -1,10 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Web_Music.Login" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Đăng nhập</title>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/MasterPage.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Web_Music.GUI.Login" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+    Đăng nhập
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="style" runat="server">
     <style>
         *{
             margin: 0px;
@@ -30,10 +28,11 @@
         }
         #container{
             padding-top: 100px;
-            height: 1000px;
+            height: 900px;
             background-image: url(../Image/Login/login_background.jpg);
         }
-        #dang_nhap{
+/*Đoạn này asp:button tự render ra 1 ô input có ID là content_dang_nhap (content_+tên ID asp:button)*/
+        #content_dang_nhap{
             margin: 0 auto;
             display: block;
             cursor: pointer;
@@ -51,7 +50,8 @@
         .input input{
             margin-bottom: 20px;
         }
-        #dang_nhap
+/*Đoạn này asp:button tự render ra 1 ô input có ID là content_dang_nhap (content_+tên ID asp:button)*/
+        #content_dang_nhap 
         {
             display:block;
             padding:15px 99px;
@@ -64,9 +64,9 @@
             font-weight: 600;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server" method="get" >
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <div runat="server">
         <div id="container">
             <div id="login">
                 <h1>Đăng nhập</h1>
@@ -83,6 +83,5 @@
                 </div>         
             </div>
         </div>
-    </form>
-</body>
-</html>
+    </div>
+</asp:Content>

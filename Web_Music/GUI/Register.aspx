@@ -1,10 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Web_Music.GUI.Register" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Đăng kí tài khoản</title>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/MasterPage.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Web_Music.GUI.Register1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="title" runat="server">
+    Đăng kí
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="style" runat="server">
     <style>
         *{
             margin: 0px;
@@ -30,10 +28,10 @@
         }
         #container{
             padding-top: 100px;
-            height: 1000px;
+            height: 900px;
             background-image: url(../Image/Login/login_background.jpg);
         }
-        #dang_nhap{
+        #content_dang_ki{
             margin: 0 auto;
             display: block;
             cursor: pointer;
@@ -55,10 +53,10 @@
         #login div:nth-child(3) input{
             margin-bottom: 0px;
         }
-        #dang_nhap
+        #content_dang_ki
         {
             display:block;
-            padding:15px 109px;
+            padding:15px 109px 27px 109px;
             margin:0 auto;  
             background-color: #D23F8D;
             border: none;
@@ -74,10 +72,9 @@
 
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div id="container">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="content" runat="server">
+    <div id="container">
             <div id="login">
                 <h1>Đăng kí </h1>
                 <div>
@@ -93,10 +90,8 @@
                     <asp:Label Text="" runat="server" ID="msg"/>
                 </div>
                 <div>
-                    <asp:Button Text="Đăng kí" runat="server" id="dang_nhap" type="submit" OnClick="dang_nhap_Click"/>
+                    <asp:Button Text="Đăng kí" runat="server" id="dang_ki" type="submit" Height="26px" OnClick="dang_ki_Click"/>
                 </div>         
             </div>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>

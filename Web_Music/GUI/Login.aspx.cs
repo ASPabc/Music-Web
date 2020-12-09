@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Web_Music.BUS;
 
-namespace Web_Music
+namespace Web_Music.GUI
 {
     public partial class Login : System.Web.UI.Page
     {
@@ -21,19 +21,19 @@ namespace Web_Music
             string username = txtusername.Text;
             string password = txtpass.Text;
             string a = bus_TaiKhoan.GetRole(username, password);
-            if (bus_TaiKhoan.GetRole(username,password).Trim() == "admin")
+            if (bus_TaiKhoan.GetRole(username, password).Trim() == "admin")
             {
 
                 Response.Redirect("Admin.aspx");
             }
-            else if(bus_TaiKhoan.GetRole(username, password) == "user")
+            else if (bus_TaiKhoan.GetRole(username, password) == "user")
             {
                 Response.Redirect("User.aspx");
-                
+
             }
-            else if(bus_TaiKhoan.GetRole(username, password) == "none")
+            else if (bus_TaiKhoan.GetRole(username, password) == "none")
             {
-                
+
             }
         }
     }

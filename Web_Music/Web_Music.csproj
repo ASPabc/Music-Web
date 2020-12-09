@@ -67,23 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="GUI\Admin.aspx" />
-    <Content Include="GUI\Register.aspx" />
-    <Content Include="GUI\User.aspx" />
-    <Content Include="Image\Login\login_background.jpg" />
+    <Content Include="GUI\Home.aspx" />
     <Content Include="GUI\Login.aspx" />
+    <Content Include="GUI\Register.aspx" />
+    <Content Include="GUI\Script\Home_Script.js" />
+    <Content Include="GUI\Style\MasterPage_style.css" />
+    <Content Include="Image\Home\play.png" />
+    <Content Include="Image\Login\login_background.jpg" />
+    <Content Include="Image\MasterPage\Logo.png" />
+    <Content Include="Image\MasterPage\nologin_user.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_Tai_Khoan.cs" />
     <Compile Include="DAL\Data.cs" />
     <Compile Include="DTO\Tai_Khoan.cs" />
-    <Compile Include="GUI\Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
+    <Compile Include="GUI\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
+    <Compile Include="GUI\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -92,6 +96,13 @@
     <Compile Include="GUI\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,16 +110,10 @@
     <Compile Include="GUI\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\User.aspx.cs">
-      <DependentUpon>User.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\User.aspx.designer.cs">
-      <DependentUpon>User.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI\MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
