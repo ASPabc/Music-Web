@@ -8,7 +8,7 @@ using Web_Music.BUS;
 
 namespace Web_Music.GUI
 {
-    public partial class Register : System.Web.UI.Page
+    public partial class Register1 : System.Web.UI.Page
     {
         BUS_Tai_Khoan bus_TaiKhoan = new BUS_Tai_Khoan();
         protected void Page_Load(object sender, EventArgs e)
@@ -16,9 +16,9 @@ namespace Web_Music.GUI
 
         }
 
-        protected void dang_nhap_Click(object sender, EventArgs e)
+        protected void dang_ki_Click(object sender, EventArgs e)
         {
-            if(txtpass.Text != txtpassconfirm.Text)
+            if (txtpass.Text != txtpassconfirm.Text)
             {
                 msg.Text = "Mật khẩu không đúng";
             }
@@ -27,7 +27,6 @@ namespace Web_Music.GUI
                 msg.Text = "";
                 bus_TaiKhoan.AddAccountForUser(txtusername.Text, txtpass.Text, "user");
             }
-
         }
     }
 }

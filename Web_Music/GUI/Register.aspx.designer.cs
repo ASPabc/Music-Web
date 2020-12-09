@@ -11,17 +11,8 @@ namespace Web_Music.GUI
 {
 
 
-    public partial class Register
+    public partial class Register1
     {
-
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// txtusername control.
@@ -60,12 +51,12 @@ namespace Web_Music.GUI
         protected global::System.Web.UI.WebControls.Label msg;
 
         /// <summary>
-        /// dang_nhap control.
+        /// dang_ki control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button dang_nhap;
+        protected global::System.Web.UI.WebControls.Button dang_ki;
     }
 }
