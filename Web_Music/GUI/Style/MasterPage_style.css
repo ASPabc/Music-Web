@@ -240,7 +240,7 @@ header {
 	transition: opacity ease-in 0.3s;
 }
 
-#view {
+.view {
 	text-align: left;
 	color: #c7c7c7;
 	font-size: 14px;
@@ -253,7 +253,7 @@ header {
 	background-repeat: no-repeat;
 }
 
-#view span:first-child {
+.view span:first-child {
 	background: url(https://stc-id.nixcdn.com/v11/images/icon-repeat.png) 0px -202px no-repeat;
 	width: 14px;
 	height: 14px;
