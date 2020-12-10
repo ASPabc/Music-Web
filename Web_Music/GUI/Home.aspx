@@ -37,77 +37,31 @@
 				<div id="today-playlist">
 					<h3><a href="#">Nghe gì hôm nay</a></h3>
 					<div class="album-list">
-						<div class="album-item">
+
+						
+
+						
+
+						<%for (int i = 0; i < 5; i++)
+                            {%>
+							<div class="album-item">
 							<div>
-								<a href="#">
-									<img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/04/16/4/4/b/2/1587031306165_300.jpg" alt="" width="100%">	
+								<a href="<% =dt1.Rows[0]["Source"].ToString()%>">
+									<img src="<%=dt1.Rows[0]["Cover_vuong"].ToString() %>" alt="" width="100%">	
 								</a>
 
 							</div>
 							<p>
-								<a href="#">Double trouble</a>
+								<a href="#"><% =dt1.Rows[0]["Name"].ToString() %></a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
-								<span>13006</span>
+								<span><% =dt1.Rows[0]["Views"].ToString() %></span>
 							</span>
-						</div>
-							<div class="album-item">
-							<div>
-								<a href="#">
-									<img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/06/18/a/c/6/0/1592452585491_300.jpg" alt="" width="100%">			
-								</a>
 							</div>
-							<p>
-								<a href="">Hoa Nở Không Màu</a>
-							</p>
-							<span id="view">
-								<span></span>
-								<span>13006</span>
-							</span>
-						</div>
-							<div class="album-item">
-							<div>
-								<a href="#">
-									<img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/06/26/7/1/2/d/1593144024494_300.jpg" alt="" width="100%">			
-								</a>
-							</div>
-							<p>
-								<a href="">Hot Đụng Nóc</a>
-							</p>
-							<span id="view">
-								<span></span>
-								<span>13006</span>
-							</span>
-						</div>
-							<div class="album-item">
-							<div>
-								<a href="#">
-									<img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/10/20/8/8/d/7/1603169627891_300.jpg" alt="" width="100%">			
-								</a>
-							</div>
-							<p>
-								<a href="">Nhạc Hoa</a>
-							</p>
-							<span id="view">
-								<span></span>
-								<span>13006</span>
-							</span>
-						</div>
-							<div class="album-item">
-							<div>
-								<a href="#">
-									<img src="https://avatar-ex-swe.nixcdn.com/playlist/2020/10/20/8/8/d/7/1603169627891_300.jpg" alt="" width="100%">			
-								</a>
-							</div>
-							<p>
-								<a href="">Nhạc việt hôm nay</a>
-							</p>
-							<span id="view">
-								<span></span>
-								<span>13006</span>
-							</span>
-						</div>
+						<%} %>
+
+						
 					</div>
 				</div>
 				<div id="latest">
@@ -123,7 +77,7 @@
 								<a href="">Oh Wow Mũi Né</a>
 
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -138,7 +92,7 @@
 								<a href="">Ooh Just You</a>
 
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -152,7 +106,7 @@
 							<p>
 								<a href="">Khóc Trong Lòng</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -166,7 +120,7 @@
 							<p>
 								<a href="">Khóc Trong Lòng</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -180,7 +134,7 @@
 							<p>
 								<a href="">30 Năm Tình Ca Quốc Bảo</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -194,7 +148,7 @@
 							<p>
 								<a href="">Solo Session</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -208,7 +162,7 @@
 							<p>
 								<a href="">Gop Ep - Thịnh Suy</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -222,7 +176,7 @@
 							<p>
 								<a href="">Bước Chân Theo Ánh Nắng Mặt Trời</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -236,7 +190,7 @@
 							<p>
 								<a href="">Bước Chân Theo Ánh Nắng Mặt Trời</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -250,7 +204,7 @@
 							<p>
 								<a href="">Bước Chân Theo Ánh Nắng Mặt Trời</a>
 							</p>
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -262,7 +216,7 @@
 					<h3><a href="#">MC Hot</a></h3>
 					<div id="mv-hot-list">
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -272,7 +226,7 @@
 							<p><a href="#">Thủy Tiên</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -282,7 +236,7 @@
 							<p><a href="#">Hoài Lâm</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -292,7 +246,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -302,7 +256,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -312,7 +266,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -322,7 +276,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -332,7 +286,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -342,7 +296,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
@@ -352,7 +306,7 @@
 							<p><a href="#">Issac</a></p>
 						</div>
 						<div class="mv-hot-item">
-							<span id="view">
+							<span class="view">
 								<span></span>
 								<span>13006</span>
 							</span>
