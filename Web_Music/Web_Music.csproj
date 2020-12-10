@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GUI\ChiTietBaiHat.aspx" />
     <Content Include="GUI\Home.aspx" />
     <Content Include="GUI\Login.aspx" />
     <Content Include="GUI\Register.aspx" />
@@ -76,12 +77,20 @@
     <Content Include="Image\Login\login_background.jpg" />
     <Content Include="Image\MasterPage\Logo.png" />
     <Content Include="Image\MasterPage\nologin_user.png" />
+    <Content Include="Music\NgaiTinh.mp3" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_Tai_Khoan.cs" />
     <Compile Include="DAL\Data.cs" />
     <Compile Include="DTO\Tai_Khoan.cs" />
+    <Compile Include="GUI\ChiTietBaiHat.aspx.cs">
+      <DependentUpon>ChiTietBaiHat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\ChiTietBaiHat.aspx.designer.cs">
+      <DependentUpon>ChiTietBaiHat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
