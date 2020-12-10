@@ -35,12 +35,9 @@
 					</ul>
 				</div>
 				<div id="today-playlist">
+					<%-- Nghe gì hôm nay --%>
 					<h3><a href="#">Nghe gì hôm nay</a></h3>
 					<div class="album-list">
-
-						
-
-						
 
 						<%for (int i = 0; i < 5; i++)
                             {%>
@@ -61,7 +58,6 @@
 							</div>
 						<%} %>
 
-						
 					</div>
 				</div>
 				<div id="latest">
